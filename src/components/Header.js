@@ -22,13 +22,12 @@ function Header() {
                     <img src = "./images/tv.jpg" alt="icon.tv"/>
                     <span><b>TV</b></span>
                 </a>
-                <a>
+                <a id="Search">
                     <img src = "./images/search.png" alt="icon.tv"/>
                     <span><b>SEARCH</b></span>
                 </a>
             </NavMenu>
-            
-            
+                
         </Nav>
     )
 }
@@ -40,7 +39,10 @@ const Nav = styled.nav`
     background: #29afff;
     display: flex;
     border: 3px outset #000000;
+    border-radius: 6px;
     align-items: center;
+    padding: 0 36px;
+    overflow-x: hidden;
 `
 const logo = styled.img`
     width: 80px;
